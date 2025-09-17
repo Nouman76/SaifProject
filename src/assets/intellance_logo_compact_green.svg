@@ -1,0 +1,27 @@
+<svg width="1400" height="420" viewBox="0 0 1400 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Intellance logo compact">
+  <defs>
+    <mask id="mark-mask-compact" maskUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="1400" height="420" fill="black"/>
+      <!-- four nodes -->
+      <circle cx="140" cy="130" r="40" fill="white"/>
+      <circle cx="140" cy="290" r="40" fill="white"/>
+      <circle cx="50"  cy="210" r="40" fill="white"/>
+      <circle cx="230" cy="210" r="40" fill="white"/>
+      <!-- cutout (rounded diamond) -->
+      <rect x="108" y="178" width="64" height="64" rx="18" fill="black" transform="rotate(45 140 210)"/>
+    </mask>
+  </defs>
+
+  <!-- Transparent background -->
+  <g fill="#34BE40">
+    <!-- Symbol -->
+    <rect x="0" y="0" width="280" height="420" mask="url(#mark-mask-compact)"/>
+    <!-- Wordmark -->
+    <text x="300" y="270"
+      font-size="180"
+      font-weight="800"
+      letter-spacing="0.5"
+      font-family="Montserrat, sans-serif"
+      fill="#34BE40">Intellance</text>
+  </g>
+</svg>
