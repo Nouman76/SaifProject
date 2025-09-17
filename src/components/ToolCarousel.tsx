@@ -5,7 +5,7 @@ import * as React from "react";
 type Logo = { src: string; alt: string };
 
 interface ToolsCarouselProps {
-  logos: Logo[];
+  logos: readonly Readonly<Logo>[];
   speedSec?: number;   // default 28
   heightPx?: number;   // default 56
   gapPx?: number;      // default 32
@@ -24,6 +24,7 @@ export default function ToolsCarousel({
     animation: `scrollX ${speedSec}s linear infinite`,
     columnGap: `${gapPx}px`,
   };
+const items: Readonly<Logo>[] = [...logos, ...logos];
 
   return (
     <>
