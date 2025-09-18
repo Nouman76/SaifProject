@@ -1,11 +1,13 @@
 "use client";
 
+import type { LucideIcon } from "lucide-react";
 import { CheckCircle, Globe2 } from "lucide-react";
+
 
 type Reason = {
   title: string;
   desc: string;
-  icon?: React.ElementType; // optional, we default to CheckCircle
+  icon?: LucideIcon; // optional, we default to CheckCircle
 };
 
 const reasons: Reason[] = [
