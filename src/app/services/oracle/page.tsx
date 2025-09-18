@@ -3,15 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   Wallet,
-  Boxes,
   BarChart3,
   ShoppingCart,
-  Workflow,
-  Users2,
-  ShieldCheck,
   Briefcase,
   Truck,
-  LineChart,
   Users,
 } from "lucide-react";
 
@@ -257,7 +252,7 @@ export default function OracleOverview() {
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2 rounded-md border border-white/20 px-5 py-2 text-sm font-semibold hover:border-[var(--brand)] hover:shadow-[0_8px_24px_rgba(52,235,64,0.18)] transition-all"
-                  style={{ ["--brand" as any]: brand.green }}
+                  style={{ "--brand": "#34eb40" } as React.CSSProperties}
                 >
                   Let’s Connect
                 </Link>
@@ -295,7 +290,7 @@ export default function OracleOverview() {
                   <a
                     href={`#${n.id}`}
                     className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/0 px-3 py-1.5 text-xs md:text-[13px] font-bold tracking-wide text-white transition-all duration-300 hover:text-white hover:border-[var(--brand)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand)]"
-                    style={{ ["--brand" as any]: brand.green }}
+                    style={{ "--brand": "#34eb40" } as React.CSSProperties}
                   >
                     {n.short}
                   </a>
@@ -352,7 +347,7 @@ export default function OracleOverview() {
           </h3>
           <div
             className="h-[2px] w-48 bg-gradient-to-r from-[var(--brand)] to-[var(--brand)]/40 mt-3 mb-4"
-            style={{ ["--brand" as any]: brand.green }}
+            style={{ "--brand": "#34eb40" } as React.CSSProperties}
           />
         </div>
       </section>
@@ -399,7 +394,7 @@ export default function OracleOverview() {
           </h3>
           <div
             className="h-[2px] w-48 bg-gradient-to-r from-[var(--brand)] to-[var(--brand)]/40 mt-3"
-            style={{ ["--brand" as any]: brand.green }}
+            style={{ "--brand": "#34eb40" } as React.CSSProperties}
           />
         </div>
       </section>
@@ -418,7 +413,7 @@ export default function OracleOverview() {
                       </h3>
                       <div
                         className="h-[2px] w-40 bg-gradient-to-r from-[var(--brand)] to-[var(--brand)]/40 mt-3 mb-5"
-                        style={{ ["--brand" as any]: brand.green }}
+                        style={{ "--brand": "#34eb40" } as React.CSSProperties}
                       />
                       <p className="text-[1.05rem] md:text-[1.125rem] leading-7 md:leading-8">
                         {m.overview}
@@ -510,7 +505,7 @@ export default function OracleOverview() {
           </h3>
           <div
             className="h-[2px] w-48 bg-gradient-to-r from-[var(--brand)] to-[var(--brand)]/40 mt-3"
-            style={{ ["--brand" as any]: brand.green }}
+            style={{ "--brand": "#34eb40" } as React.CSSProperties}
           />
         </div>
       </section>
@@ -550,7 +545,7 @@ export default function OracleOverview() {
           </h3>
           <div
             className="h-[2px] w-56 bg-gradient-to-r from-[var(--brand)] to-[var(--brand)]/40 mt-3"
-            style={{ ["--brand" as any]: brand.green }}
+            style={{ "--brand": "#34eb40" } as React.CSSProperties}
           />
         </div>
       </section>
@@ -578,7 +573,7 @@ export default function OracleOverview() {
                 <li key={d.step} className="flex gap-4">
                   <span
                     className="flex h-9 w-9 flex-none items-center justify-center rounded-full text-[var(--brand)] font-extrabold border border-[var(--brand)]"
-                    style={{ ["--brand" as any]: brand.green }}
+                    style={{ "--brand": "#34eb40" } as React.CSSProperties}
                   >
                     {d.step}
                   </span>

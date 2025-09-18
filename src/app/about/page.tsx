@@ -4,17 +4,14 @@ import Image from "next/image";
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 import type { CSSProperties } from "react";
 import {
-  Sparkles,
   Wrench,
   BrainCircuit,
   Target,
   Globe2,
-  Users,
   ShieldCheck,
   Rocket,
   BarChart3,
   LineChart,
-  Quote,
 } from "lucide-react";
 
 /* ---------------------------------- BRAND --------------------------------- */
@@ -56,13 +53,6 @@ function SectionTitle({
   );
 }
 
-function Pill({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/90">
-      {children}
-    </div>
-  );
-}
 
 /* ---------------------------------- DATA ---------------------------------- */
 const usp = [
@@ -95,11 +85,6 @@ const impactStats = [
   { icon: BarChart3, label: "Faster decisions w/ AI", value: "25%" },
 ] as const;
 
-const teamSnapshot = [
-  { label: "Certified consultants", value: "60+" },
-  { label: "Nationalities", value: "12" },
-  { label: "Client retention (3yrs)", value: "100%" },
-] as const;
 
 const leadership = [
   {

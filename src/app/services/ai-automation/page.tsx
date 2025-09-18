@@ -1,7 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
-import ToolCarousel from "@/components/ToolCarousel"; // ✅ shared carousel
-import styles from "./page.module.css";
+import ToolCarousel from "@/components/ToolCarousel";
+import type { CSSProperties } from "react";
 import {
   Cpu,
   Bot,
@@ -136,12 +135,6 @@ const modules: Module[] = [
   },
 ] as const;
 
-  const kpis = [
-    { kpi: "6–10 weeks", label: "Time to MVP" },
-    { kpi: "20–40%", label: "Ops cost impact" },
-    { kpi: "3–5×", label: "Analyst productivity" },
-    { kpi: "95%+", label: "Automation reliability" },
-  ];
 
   const delivery = [
     {
@@ -446,7 +439,7 @@ const toolsAiAutomation = [
     <h3 className="text-2xl md:text-3xl font-extrabold">Delivery Approach</h3>
     <div
       className="h-[2px] w-56 bg-gradient-to-r from-[var(--brand)] to-[var(--brand)]/40 mt-3"
-      style={{ "--brand": brand.green } as CSSProperties}
+      style={{ "--brand": brand.green } as React.CSSProperties}
     />
   </div>
 </section>
@@ -475,7 +468,7 @@ const toolsAiAutomation = [
           <li key={d.step} className="flex gap-4">
             <span
               className="flex h-9 w-9 flex-none items-center justify-center rounded-full text-[var(--brand)] font-extrabold border border-[var(--brand)]"
-              style={{ "--brand": brand.green } as CSSProperties}
+              style={{ "--brand": brand.green } as React.CSSProperties}
             >
               {d.step}
             </span>
@@ -509,7 +502,7 @@ const toolsAiAutomation = [
             style={{
               "--brand": brand.green,
               "--dark": brand.dark,
-            } as CSSProperties}
+            } as React.CSSProperties}
           >
             Request a demo
           </Link>

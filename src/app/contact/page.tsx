@@ -11,11 +11,6 @@ export const metadata = {
     "Get in touch to talk ERP, AI & automation. Offices worldwide and 24/7 support.",
 };
 
-const dots = [
-  // demo lines (customize or remove)
-  { start: { lat: 37.7749, lng: -122.4194 }, end: { lat: 51.5072, lng: -0.1276 } },
-  { start: { lat: 28.6139, lng: 77.209 }, end: { lat: 25.2048, lng: 55.2708 } },
-];
 
 export default function ContactPage() {
   return (

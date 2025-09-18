@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Link from "next/link";
 import { motion, useMotionTemplate, useMotionValue, animate } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import { Stars } from "@react-three/drei";
