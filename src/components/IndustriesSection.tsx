@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import type { LucideIcon } from "lucide-react";
 import {
   Landmark,
   ShoppingBag,
@@ -19,7 +20,7 @@ type Industry = {
   title: string;
   desc: string;
   href: string;
-  icon: React.ElementType;
+  icon: LucideIcon;
 };
 
 const industries: Industry[] = [
