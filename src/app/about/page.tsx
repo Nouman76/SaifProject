@@ -520,13 +520,6 @@ export default function AboutPage() {
                 >
                   Schedule a Call
                 </Link>
-                <Link
-                  href="/contact?type=rfp"
-                  className="inline-flex items-center justify-center rounded-md border border-white/20 px-5 py-2 text-sm font-semibold transition-all hover:border-[var(--brand)]"
-                  style={{ "--brand": brand.green } as React.CSSProperties}
-                >
-                  Request a Proposal
-                </Link>
               </div>
             </div>
           </div>
